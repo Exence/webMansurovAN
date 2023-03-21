@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registration form</title>
 </head>
 <body>
-    
+    <div class="main-container">
+        <h1 class="orange">Registration form</h1>
+        <form action="" class="registration-form">
+            <div class="form-input">
+                <label for="login-input">Login</label>
+                <input type="text" id="login-input" placeholder="Enter your login...">
+            </div>
+            <div class="form-input">
+                <label for="password-input-first">Password</label>
+                <input type="password" id="password-input-first" placeholder="Enter your password...">
+            </div>
+            <div class="form-input">
+                <label for="password-input-second">Repeat password</label>
+                <input type="password" id="password-input-second" placeholder="Repeat your password...">
+            </div>
+            <div class="form-input">
+                <label for="user-sex-select">Your gender</label> <br>
+                <select id="user-sex-select" class="user-sex-select"> 
+                    <option value="man">Man</option>
+                    <option value="woman">Woman</option>
+                </select>
+            </div>        
+            <input type="submit" value="Sign up">
+        </form>
+    </div>
 </body>
 </html>
