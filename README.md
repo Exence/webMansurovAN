@@ -1,4 +1,4 @@
 # webMansurovAN
 Practics of web
 ______________
-Validation form on Express JS server
+Registration form on Express JS server
