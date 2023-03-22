@@ -76,12 +76,28 @@
     font-size: 16px;
     padding: 40px;
   }
+
+    :focus::-webkit-input-placeholder {
+    color: transparent
+    }
+
+    :focus::-moz-placeholder {
+    color: transparent
+    }
+
+    :focus:-moz-placeholder {
+    color: transparent
+    }
+
+    :focus:-ms-input-placeholder {
+    color: transparent
+    }
   
   h1 {
     margin: 0px 0px 20px 0px;
     line-height: 150%;
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     color: #000;
     filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
@@ -92,7 +108,8 @@
   }
   
   label {
-    font-size: 20px;
+    font-size: 16px;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
   }
   
   .orange {
@@ -106,9 +123,9 @@
     align-items: center;
     justify-content: center;    
   }
-  
+
   input, .user-sex-select {
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Consolas";
     width: 100%;
     margin: 10px 0 10px;
@@ -124,6 +141,7 @@
     cursor: pointer;
     background-color: #008490;
     color: #fff;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
   }
   input[type=submit]:hover, input[type=button]:hover {
     background-color: #88d3cf;
@@ -138,4 +156,9 @@
     max-width: 350px;
     padding: 15px;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+  }
+
+  .input-error {
+    border: 2px solid red;
+    box-shadow: inset 0px 0px 5px 7px rgba(255,0,0,0.1);
   }
