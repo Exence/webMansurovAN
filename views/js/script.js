@@ -20,13 +20,13 @@ email_input.addEventListener("blur", () => email_validation(email_input));
 password_input.addEventListener("blur", () => password_validation(password_input, 8));
 repeated_password_input.addEventListener("blur", () => repeated_password_validation(password_input, repeated_password_input));
 
-registration_form.addEventListener("click", function (event) {
-    event.preventDefault();
+registration_form.addEventListener("submit", function (event) {
     if (login_validation(login_inpit, 3, 5))
     if (email_validation(email_input))
     if (password_validation(password_input, 8))
     if (repeated_password_validation(password_input, repeated_password_input))
     registration_form.submit();
+    event.preventDefault();
 })
 
 function login_validation(login_inpit,min_len,max_len)
