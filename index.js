@@ -4,12 +4,11 @@ const fs = require('fs');
 const app = express();
 
 app.use(express.static('views'));
-app.use(express.json());
 app.use(express.urlencoded({extended: false}))
 
 
 app.get('/', (request, response) =>{
-    response.sendFile(__dirname + '/views/index.html')
+    response.sendFile("index.html")
 })
 
 app.post('/',function (request, response) {
